@@ -1,8 +1,7 @@
-package com.example.sai;
+package com.pk.sai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +9,8 @@ import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import sai.R;
 
 public class DescriptionActivity extends AppCompatActivity {
 

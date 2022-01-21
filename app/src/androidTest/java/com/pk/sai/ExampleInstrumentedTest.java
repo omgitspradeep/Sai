@@ -1,4 +1,4 @@
-package com.example.sai;
+package com.pk.sai;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.sai", appContext.getPackageName());
+        assertEquals("com.example.com.pk.sai", appContext.getPackageName());
     }
 }
