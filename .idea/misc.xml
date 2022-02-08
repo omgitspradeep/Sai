@@ -5,11 +5,33 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/circular_button.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/dialog.xml" value="0.166" />
+        <entry key="app/src/main/res/drawable/et_custom.xml" value="0.165" />
+        <entry key="app/src/main/res/drawable/main_custom.xml" value="0.2235" />
+        <entry key="app/src/main/res/drawable/sub_custom.xml" value="0.1905" />
+        <entry key="app/src/main/res/layout-v28/activity_description.xml" value="0.17864583333333334" />
+        <entry key="app/src/main/res/layout-v28/activity_start.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_description.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_image_display.xml" value="0.13840694006309148" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1595744680851064" />
+        <entry key="app/src/main/res/layout/activity_my_resolves.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/activity_sai_bhajans.xml" value="0.1778537836682343" />
+        <entry key="app/src/main/res/layout/activity_sai_names.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_url_read.xml" value="0.1778537836682343" />
+        <entry key="app/src/main/res/layout/adapter_important_bhajan.xml" value="0.1778537836682343" />
+        <entry key="app/src/main/res/layout/adapter_my_mantra.xml" value="0.14749893116716545" />
+        <entry key="app/src/main/res/layout/adapter_my_resolves.xml" value="0.12783318223028106" />
         <entry key="app/src/main/res/layout/chapter.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/dialog_add_resolve.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/dialog_jump_mantra.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/dialog_language_selector.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/setting_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/temp.xml" value="0.21666666666666667" />
+        <entry key="app/src/main/res/layout/temp2.xml" value="0.2" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.29259259259259257" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2453125" />
       </map>
     </option>
   </component>

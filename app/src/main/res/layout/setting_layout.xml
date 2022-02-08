@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/factor_mdpi_45_dp"
+        android:text="Contact "
+        android:background="@color/gold"
+        android:gravity="center"
+        android:textSize="@dimen/textAppearance_mdpi_22_sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pradeep Khanal\nbinary.science98@gmail.com "
+        android:textSize="@dimen/textAppearance_mdpi_15_sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:paddingStart="@dimen/factor_mdpi_20_dp"
+        android:paddingEnd="@dimen/factor_mdpi_10_dp"
+        android:layout_marginTop="@dimen/factor_mdpi_10_dp"
+        android:layout_marginBottom="@dimen/factor_mdpi_30_dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gold"
+        >
+
+
+        <Button
+            android:id="@+id/share_app_link"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_your_app"
+            android:background="@drawable/main_custom"
+            android:gravity="center"
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/factor_mdpi_30_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_30_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_20_dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/factor_mdpi_45_dp"
+        android:text="Select Language"
+        android:background="@color/gold"
+        android:gravity="center"
+        android:textSize="@dimen/textAppearance_mdpi_22_sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        />
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_lang_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/factor_mdpi_15_dp"
+        android:layout_marginBottom="@dimen/factor_mdpi_15_dp"
+        android:layout_marginEnd="@dimen/factor_mdpi_10_dp"
+        android:layout_marginStart="@dimen/factor_mdpi_30_dp"
+        >
+
+<!--    <RadioButton
+        android:id="@+id/main_lang_selection_nepali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:onClick="onLanguageButtonClicked"
+        android:text="@string/nepali"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textAppearance_mdpi_20_sp"
+        android:textStyle="bold"
+        />-->
+    <RadioButton
+        android:id="@+id/main_lang_selection_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onLanguageButtonClicked"
+        android:text="@string/english"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textAppearance_mdpi_20_sp"
+        android:textStyle="bold"
+        />
+
+    <RadioButton
+        android:id="@+id/main_lang_selection_hindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:onClick="onLanguageButtonClicked"
+        android:text="@string/hindi"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textAppearance_mdpi_20_sp"
+        android:textStyle="bold"
+        />
+    </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/setting_button_ok"
+        android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/factor_mdpi_45_dp"
+        android:text="@string/ok"
+        android:background="@drawable/main_custom"
+        android:gravity="center"
+        android:textSize="@dimen/textAppearance_mdpi_30_sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/factor_mdpi_30_dp"
+        android:layout_marginEnd="@dimen/factor_mdpi_30_dp"
+        android:layout_marginBottom="@dimen/factor_mdpi_20_dp"
+        />
+
+</LinearLayout>
+
+</ScrollView>

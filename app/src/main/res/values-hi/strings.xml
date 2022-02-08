@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sai</string>
+
+    <string name="sai_sat">श्री साईं\nसत्चरित्र</string>
+    <string name="sai_names">श्री साईं बाबा\nअष्टोत्तारशत नामावली</string>
+    <string name="sai_saying">श्री साईबाबाके\nवचन</string>
+    <string name="sai_bhajan">साईं\nभजन</string>
+    <string name="settings">App\nSettings</string>
+    <string name="jump">छलांग</string>
+    <string name="finalDest">\?</string>
+    <string name="my_resolves">मेरा\nसंकल्प</string>
+    <string name="add_resolve">अपना संकल्प लिखें</string>
+    <string name="lang_selection">भाषा चुने:</string>
+    <string name="sample_text">यह नमूना पाठ है</string>
+    <string name="chapters">अध्याय</string>
+    <string name="chapter">अध्याय</string>
+    <string name="temp_num">१००</string>
+    <string name="your_resolve">आपका संकल्प.....</string>
+    <string name="save">Save</string>
+    <string name="bengali">Bengali (বাঙালি)</string>
+    <string name="english">English </string>
+    <string name="hindi">Hindi (हिन्दी)</string>
+    <string name="gujrati">Gujrati (ગુજરાતી)</string>
+    <string name="malyalam">Malyalam (മലയാളം)</string>
+    <string name="marathi">Marathi (मराठी)</string>
+    <string name="nepali">Nepali (नेपाली)</string>
+    <string name="punjabi">Punjabi (ਪੰਜਾਬੀ)</string>
+    <string name="oriya">Oriya (ଓଡିଆ)</string>
+    <string name="tamil">Tamil (தமிழ்)</string>
+    <string name="telgu">Telgu (తెలుగు)</string>
+    <string name="lang_already_selected">भाषा पहले ही चुनी जा चुकी है!</string>
+    <string name="ok">ओके</string>
+    <string name="update">अपडेट</string>
+    <string name="resolve_added">संकल्प दर्ज किया गया ।</string>
+    <string name="enter_resolve">कृपया अपना संकल्प दर्ज करें।</string>
+    <string name="updated_resolve">चयनित संकल्प अद्यतन किया गया है ।</string>
+    <string name="delete_forever">यह हमेशा के लिए हट जाएगा.\nक्या आप सुनिश्चित हैं</string>
+    <string name="eplilogue">उपसंहार</string>
+    <string name="deleted_resolve">चयनित संकल्प हटा दिया गया है.</string>
+    <string name="yes">हां</string>
+    <string name="bhupali_aarti">भूपाली आरती</string>
+    <string name="kakad_aarti">काकड़ आरती</string>
+    <string name="madhyan_aarti">मध्यान आरती</string>
+    <string name="dhup_aarti">धूप आरती</string>
+    <string name="shej_aarti">शेज आरती</string>
+    <string name="share_your_app">अपना ऐप साझा करें</string>
+
+</resources>

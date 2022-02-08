@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/factor_mdpi_20_dp"
+    android:paddingTop="@dimen/factor_mdpi_20_dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/factor_mdpi_150_dp"
+        android:layout_marginStart="@dimen/factor_mdpi_40_dp"
+        android:layout_marginEnd="@dimen/factor_mdpi_60_dp"
+        android:background="@drawable/jump_image"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jump_start_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_num"
+            android:layout_marginStart="@dimen/factor_mdpi_35_dp"
+            android:textSize="@dimen/textAppearance_mdpi_45_sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/jump_stop_point"
+            android:layout_width="@dimen/factor_mdpi_150_dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/jump_start_point"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/factor_mdpi_35_dp"
+            android:background="@drawable/main_custom"
+            android:gravity="center"
+            android:hint="@string/finalDest"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textAppearance_mdpi_45_sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_jump"
+        android:layout_marginTop="@dimen/factor_mdpi_30_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textAppearance_mdpi_35_sp"
+        android:textAllCaps="false"
+        android:background="@drawable/main_custom"
+        android:paddingLeft="@dimen/factor_mdpi_20_dp"
+        android:paddingRight="@dimen/factor_mdpi_20_dp"
+        android:text="@string/jump"/>
+
+</LinearLayout>

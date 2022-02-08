@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.com.pk.sai"
+        applicationId "com.pk.sai"
         minSdk 21
         targetSdk 31
         versionCode 1

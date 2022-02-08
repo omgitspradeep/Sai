@@ -1,3 +1,47 @@
 <resources>
-    <string name="app_name">Sai</string>
+    <string name="app_name" translatable="false">Sai</string>
+    <string name="sai_sat">Sri Sai\nSatcharitra</string>
+    <string name="sai_names">108 Names\nof Sai Baba</string>
+    <string name="sai_bhajan">Sai\nBhajan</string>
+    <string name="settings">App\nSettings</string>
+    <string name="sai_saying">Sai\nAssurances</string>
+    <string name="jump">Jump</string>
+    <string name="finalDest">\?</string>
+    <string name="my_resolves">My\nResolves</string>
+    <string name="add_resolve">Add your resolve</string>
+    <string name="lang_selection">Select Language:</string>
+    <string name="sample_text">This is sample text</string>
+    <string name="chapters">Chapters </string>
+    <string name="chapter">Chapter </string>
+    <string name="temp_num">100</string>
+    <string name="your_resolve">Your resolve.....</string>
+    <string name="save">Save</string>
+    <string name="lang_already_selected">Language already selected!</string>
+    <string name="bengali"  translatable="false">Bengali (বাঙালি)</string>
+    <string name="english"  translatable="false">English </string>
+    <string name="hindi"  translatable="false">Hindi (हिन्दी)</string>
+    <string name="gujrati"  translatable="false">Gujrati (ગુજરાતી)</string>
+    <string name="malyalam"  translatable="false">Malyalam (മലയാളം)</string>
+    <string name="marathi"  translatable="false">Marathi (मराठी)</string>
+    <string name="nepali"  translatable="false">Nepali (नेपाली)</string>
+    <string name="punjabi"  translatable="false">Punjabi (ਪੰਜਾਬੀ)</string>
+    <string name="oriya"  translatable="false">Oriya (ଓଡିଆ)</string>
+    <string name="tamil"  translatable="false">Tamil (தமிழ்)</string>
+    <string name="telgu" translatable="false">Telgu (తెలుగు)</string>
+    <string name="ok">OK</string>
+    <string name="update">Update</string>
+    <string name="resolve_added">Resolve has been added.</string>
+    <string name="enter_resolve">Please enter your Resolve.</string>
+    <string name="updated_resolve">Selected Resolve is updated.</string>
+    <string name="delete_forever">This will delete forever.\nAre you sure?</string>
+    <string name="eplilogue">Eplilogue</string>
+    <string name="deleted_resolve">Selected Resolve is deleted.</string>
+    <string name="yes">Yes</string>
+    <string name="bhupali_aarti">Bhupali Aarti</string>
+    <string name="kakad_aarti">Kakad Aarti</string>
+    <string name="madhyan_aarti">Madhyan Aarti</string>
+    <string name="dhup_aarti">Dhup Aarti</string>
+    <string name="shej_aarti">Shej Aarti</string>
+    <string name="share_your_app">Share your app</string>
+
 </resources>

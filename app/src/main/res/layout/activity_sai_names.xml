@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pk.sai.SaiNamesActivity"
+    android:background="@color/white">
+
+
+
+<RelativeLayout
+    android:id="@+id/parent_layout_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout_chanting_knames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/factor_mdpi_20_dp">
+
+        <CheckBox
+            android:id="@+id/hide_desc_sai_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+            android:background="@color/gold"
+            android:backgroundTint="@color/gold"
+            android:buttonTint="@color/white"
+            android:checked="true"
+            android:onClick="hideDesc" />
+
+        <ImageButton
+            android:id="@+id/language_selction_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/factor_mdpi_50_dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_g_translate_24"
+            android:layout_toStartOf="@+id/jump_main_screen"
+            android:tint="@color/black" />
+
+
+        <ImageButton
+            android:id="@+id/jump_main_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_directions_run_30"
+            android:tint="@color/black" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/display_section_knames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout_chanting_knames"
+        android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+        android:layout_marginTop="@dimen/factor_mdpi_40_dp"
+        android:layout_marginEnd="@dimen/factor_mdpi_10_dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/k_names_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sample_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textAppearance_mdpi_35_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/k_knames_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/factor_mdpi_10_dp"
+            android:gravity="center"
+            android:text="@string/sample_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/chanting_buttonsPanel_knames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/factor_mdpi_10_dp"
+        >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+
+            <ImageButton
+                android:id="@+id/chanting_prev_button_click_knames"
+                android:layout_width="@dimen/factor_mdpi_60_dp"
+                android:layout_height="@dimen/factor_mdpi_60_dp"
+                android:padding="@dimen/factor_mdpi_05_dp"
+                android:src="@drawable/ic_baseline_fast_rewind_50"
+                android:background="@drawable/circular_button"
+                android:layout_gravity="center"
+
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            >
+
+            <com.pk.sai.utils.CircularSeekBar
+                android:id="@+id/circularSeekBar_knames"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="@dimen/factor_mdpi_240_dp"
+                android:layout_height="@dimen/factor_mdpi_240_dp"
+                android:layout_gravity="center"
+                app:max="20"
+                app:pointer_color="@color/gold"
+                app:pointer_halo_color="@color/blue"
+                app:circle_color="@color/blue"
+                app:circle_progress_color="@color/gold"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next_button_click_knames"
+                android:layout_width="@dimen/factor_mdpi_200_dp"
+                android:layout_height="@dimen/factor_mdpi_200_dp"
+                android:text="7777"
+                android:textSize="@dimen/textAppearance_mdpi_62_sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/circular_button"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <include
+        android:id="@+id/language_layout_main"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/dialog_language_selector"/>
+
+</FrameLayout>

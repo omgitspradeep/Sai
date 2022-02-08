@@ -2,6 +2,7 @@ package com.pk.sai;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,6 +10,9 @@ import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.pk.sai.utils.AppConstants;
+import com.pk.sai.utils.MyPreferences;
 
 import sai.R;
 
@@ -21,13 +25,23 @@ public class DescriptionActivity extends AppCompatActivity {
     boolean isChapterSelected=true;
     ImageButton forward, backward;
     TextView chapterTitle;
-    String url="file:///android_asset/contents.html";
+    String lang="";
+    String url= "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
         extras = getIntent().getExtras();
+
+        lang=MyPreferences.getStringPrefrences(AppConstants.APP_LANGUAGE,this,"en");
+
+        if(lang.equals("en")){
+            url=AppConstants.satcharitraUrlEnglish+"contents.html";
+        }else{
+            url=AppConstants.satcharitraUrlHindi+"contents.html";
+        }
+
         if(!extras.equals(null)) {
             selectedChapter = extras.getInt("chapter");
             if(selectedChapter==101){
@@ -49,25 +63,31 @@ public class DescriptionActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private void operations() {
-        url = "file:///android_asset/" + selectedChapter + ".html";
+
+        if(lang.equals("en")){
+            url=AppConstants.satcharitraUrlEnglish+ selectedChapter + ".html";
+        }else{
+            url=AppConstants.satcharitraUrlHindi+ selectedChapter + ".html";
+        }
 
         switch (selectedChapter){
 
             case 16:
-                chapterTitle.setText("Chapter "+16+" and "+17);
+                chapterTitle.setText(getResources().getString(R.string.chapters)+" " +16 +" and "+17);
                 break;
             case 18:
-                chapterTitle.setText("Chapter "+18 + " and "+19);
+                chapterTitle.setText(getResources().getString(R.string.chapters)+" " +18 +" and "+19);
                 break;
             case 43:
-                chapterTitle.setText("Chapter "+43 +" and "+44);
+                chapterTitle.setText(getResources().getString(R.string.chapters)+" " +43 +" and "+44);
                 break;
             case 51:
-                chapterTitle.setText("Epilogue");
+                chapterTitle.setText(getResources().getString(R.string.eplilogue));
                 break;
             default:
-                chapterTitle.setText("Chapter "+selectedChapter);
+                chapterTitle.setText(getResources().getString(R.string.chapter)+" "+selectedChapter);
                 break;
 
         }
@@ -76,12 +96,10 @@ public class DescriptionActivity extends AppCompatActivity {
         switch (selectedChapter){
             case 1:
                 //make forward invisible
-                Log.e("HELLO", "CASE1");
                 backward.setVisibility(View.INVISIBLE);
                 break;
             case 51:
                 // Chapter 51 is Eplilogue.
-                Log.e("HELLO", "CASE3");
                 forward.setVisibility(View.INVISIBLE);
                 //do something
                 break;
@@ -90,8 +108,6 @@ public class DescriptionActivity extends AppCompatActivity {
                 // do something
                 forward.setVisibility(View.VISIBLE);
                 backward.setVisibility(View.VISIBLE);
-                Log.e("HELLO", "CASE OTHER");
-
                 break;
 
         }
@@ -119,7 +135,6 @@ public class DescriptionActivity extends AppCompatActivity {
                 operations();
             }
         });
-
     }
 
     private int getChapterIncre() {

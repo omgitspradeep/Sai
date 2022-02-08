@@ -7,22 +7,22 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context="com.pk.sai.MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/factor_mdpi_10_dp"
         android:src="@drawable/sai"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="@dimen/factor_mdpi_175_dp"
+        android:layout_height="@dimen/factor_mdpi_175_dp"
         android:layout_gravity="center"
         />
 
     <LinearLayout
-        android:background="#FFAF19"
+        android:background="@color/gold"
         android:id="@+id/introLay"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/factor_mdpi_10_dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -31,12 +31,12 @@
 
         <Button
             android:id="@+id/chapters"
-            android:text="Chapters"
+            android:text="@string/chapters"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="@dimen/textAppearance_mdpi_25_sp"
             android:textStyle="bold"
             android:background="@android:color/transparent"
             />
@@ -65,13 +65,5 @@
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-
- <!--   <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="सबका मालिक एक"
-        android:textColor="@color/black"
-        android:gravity="center"
-        />-->
 
 </LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/factor_mdpi_08_dp"
+    app:cardElevation="@dimen/factor_mdpi_08_dp"
+    app:cardMaxElevation="@dimen/factor_mdpi_10_dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <!-- Title Of Song-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@android:color/holo_blue_bright"
+
+        >
+
+        <TextView
+            android:id="@+id/imp_stuff_title_sn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_num"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textAppearance_mdpi_16_sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="@dimen/factor_mdpi_02_dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/factor_mdpi_05_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_05_dp"
+            />
+
+        <TextView
+            android:id="@+id/imp_stuff_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:typeface="sans"
+            android:layout_weight="8"
+            android:padding="@dimen/factor_mdpi_14_dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

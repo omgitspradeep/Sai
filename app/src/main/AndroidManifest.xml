@@ -1,29 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sai">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sai">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar">
-        <activity
-            android:name="com.pk.sai.ImageDisplay"
-            android:exported="true" />
-        <activity
-            android:name="com.pk.sai.DescriptionActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.pk.sai.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/icon"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Design.NoActionBar">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+    <activity
+        android:name="com.pk.sai.ImageDisplay"
+        android:exported="true" />
+    <activity
+        android:name="com.pk.sai.DescriptionActivity"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:exported="true" />
+    <activity
+        android:name="com.pk.sai.MainActivity"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:exported="true" />
+    <activity
+        android:name="com.pk.sai.SaiBhajansActivity"
+        android:exported="true"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light" />
+    <activity
+        android:name="com.pk.sai.UrlReadActivity"
+        android:exported="true"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.Light" />
+
+    <activity
+        android:name="com.pk.sai.SaiNamesActivity"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        android:exported="true"
+
+        />
+
+    <activity
+        android:name="com.pk.sai.MyResolveActivity"
+        android:exported="true"
+        android:theme="@style/Theme.Design.NoActionBar" />
+
+    <activity
+        android:name="com.pk.sai.StartActivity"
+        android:exported="true"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"
+        />
+
+
+    <activity
+        android:name="com.pk.sai.SplashActivity"
+        android:exported="true">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+
+    </activity>
+
+
+
+</application>
 
 </manifest>

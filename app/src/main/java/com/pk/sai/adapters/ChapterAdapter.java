@@ -1,4 +1,4 @@
-package com.pk.sai;
+package com.pk.sai.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.pk.sai.DescriptionActivity;
 
 import sai.R;
 
@@ -33,7 +35,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         int chapterId= bookDataList[position];
         if(chapterId==51){
-            holder.chID.setText("Eplilogue");
+            holder.chID.setText(R.string.eplilogue);
         }else{
             holder.chID.setText(chapterId+"");
         }

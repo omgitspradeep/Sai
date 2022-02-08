@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/factor_mdpi_40_dp"
+        android:paddingTop="@dimen/factor_mdpi_20_dp"
+        android:background="@color/white"
+        >
+        <Button
+            android:id="@+id/cancel_add_resolve_dialog"
+            android:layout_width="@dimen/factor_mdpi_60_dp"
+            android:layout_height="@dimen/factor_mdpi_60_dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_baseline_cancel_24"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:backgroundTint="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/my_resolve_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_add_resolve_dialog"
+            android:layout_marginLeft="@dimen/factor_mdpi_20_dp"
+            android:layout_marginTop="@dimen/factor_mdpi_40_dp"
+            android:layout_marginRight="@dimen/factor_mdpi_20_dp"
+            android:background="@drawable/main_custom"
+            android:hint="@string/your_resolve"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:maxLines="24"
+            android:padding="@dimen/factor_mdpi_15_dp"
+            android:textSize="@dimen/textAppearance_mdpi_15_sp" />
+
+
+        <Button
+            android:id="@+id/my_resolve_save_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_resolve_"
+            android:layout_marginLeft="@dimen/factor_mdpi_20_dp"
+            android:layout_marginTop="@dimen/factor_mdpi_15_dp"
+            android:layout_marginRight="@dimen/factor_mdpi_20_dp"
+            android:background="@drawable/main_custom"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

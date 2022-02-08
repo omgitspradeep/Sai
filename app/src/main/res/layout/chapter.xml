@@ -6,14 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="10dp"
-
-        app:cardBackgroundColor="#FFAF19"
+        android:layout_width="@dimen/factor_mdpi_100_dp"
+        android:layout_height="@dimen/factor_mdpi_100_dp"
+        app:cardElevation="@dimen/factor_mdpi_10_dp"
+        app:cardCornerRadius="@dimen/factor_mdpi_10_dp"
+        app:cardBackgroundColor="@color/gold"
         app:cardPreventCornerOverlap="true"
-        app:cardMaxElevation="12dp"
+        app:cardMaxElevation="@dimen/factor_mdpi_12_dp"
         app:cardUseCompatPadding="true">
 
 
@@ -21,12 +20,12 @@
             android:id="@+id/chapterName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="1"
+            tools:text="@string/temp_num"
             android:textColor="@color/black"
-            android:textSize="25sp"
+            android:textSize="@dimen/textAppearance_mdpi_25_sp"
             android:gravity="center"
             android:layout_gravity="center"
-            android:padding="10dp"
+            android:padding="@dimen/factor_mdpi_10_dp"
             android:textStyle="bold"
             />
     </androidx.cardview.widget.CardView>

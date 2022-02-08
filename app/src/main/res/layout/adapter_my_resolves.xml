@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/factor_mdpi_05_dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/factor_mdpi_08_dp"
+    app:cardElevation="@dimen/factor_mdpi_08_dp"
+    app:cardMaxElevation="@dimen/factor_mdpi_10_dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/factor_mdpi_15_dp"
+        android:weightSum="10"
+        >
+
+
+        <!-- Words from resolve-->
+        <TextView
+            android:id="@+id/adap_my_resolve_"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_text"
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="@color/black"
+            android:layout_weight="9"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/lower_panel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="@dimen/factor_mdpi_03_dp"
+            >
+
+
+            <ImageButton
+                android:id="@+id/adap_my_resolve_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_baseline_delete_forever_30"
+                android:textSize="@dimen/textAppearance_mdpi_20_sp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:tint="@color/black"
+                android:layout_marginBottom="@dimen/factor_mdpi_10_dp"
+                />
+
+            <ImageView
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/factor_mdpi_01_dp"/>
+
+            <ImageButton
+                android:id="@+id/adap_my_resolve_update"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_edit_30"
+                app:tint="@color/black"
+                android:layout_marginTop="@dimen/factor_mdpi_10_dp"
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

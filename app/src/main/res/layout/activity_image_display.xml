@@ -12,7 +12,7 @@
 
 
         <ImageView
-            android:layout_margin="5dp"
+            android:layout_margin="@dimen/factor_mdpi_05_dp"
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

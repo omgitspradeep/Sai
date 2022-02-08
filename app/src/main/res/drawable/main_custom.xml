@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Pressed display -->
+
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="@dimen/factor_mdpi_05_dp" />
+            <stroke android:width="@dimen/factor_mdpi_06_dp" android:color="@color/gold" />
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="@dimen/factor_mdpi_05_dp" />
+            <stroke android:width="@dimen/factor_mdpi_03_dp" android:color="@color/blue" />
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+
+
+    <!-- Initial display -->
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="@dimen/factor_mdpi_05_dp" />
+            <stroke android:width="@dimen/factor_mdpi_03_dp" android:color="#000000" />
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+</selector>

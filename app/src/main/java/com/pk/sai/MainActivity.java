@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.pk.sai.adapters.ChapterAdapter;
+import com.pk.sai.utils.GridSpacingItemDecoration;
+
 import sai.R;
 
 public class MainActivity extends AppCompatActivity {
