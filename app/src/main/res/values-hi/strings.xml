@@ -5,7 +5,8 @@
     <string name="sai_sat">श्री साईं\nसत्चरित्र</string>
     <string name="sai_names">श्री साईं बाबा\nअष्टोत्तारशत नामावली</string>
     <string name="sai_saying">श्री साईबाबाके\nवचन</string>
-    <string name="sai_bhajan">साईं\nभजन</string>
+    <string name="sai_kriti">साईं\nकृति</string>
+    <string name="sai_kriti_title">साईं कृति</string>
     <string name="settings">App\nSettings</string>
     <string name="jump">छलांग</string>
     <string name="finalDest">\?</string>
@@ -39,11 +40,14 @@
     <string name="eplilogue">उपसंहार</string>
     <string name="deleted_resolve">चयनित संकल्प हटा दिया गया है.</string>
     <string name="yes">हां</string>
+    <string name="no">ना</string>
     <string name="bhupali_aarti">भूपाली आरती</string>
     <string name="kakad_aarti">काकड़ आरती</string>
     <string name="madhyan_aarti">मध्यान आरती</string>
     <string name="dhup_aarti">धूप आरती</string>
     <string name="shej_aarti">शेज आरती</string>
     <string name="share_your_app">अपना ऐप साझा करें</string>
+    <string name="sai_aarti">श्री साईं आरती</string>
+    <string name="abdul_baba_diary">अब्दुल बाबा की डेयरी</string>
 
 </resources>

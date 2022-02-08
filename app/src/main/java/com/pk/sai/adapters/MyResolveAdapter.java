@@ -77,7 +77,7 @@ public class MyResolveAdapter extends RecyclerView.Adapter<MyResolveAdapter.View
 
                         // validating if the text fields are empty or not.
                         if (myResolve.isEmpty()) {
-                            Toast.makeText(mContext, R.string.enter_resolve, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(mContext, mContext.getResources().getString(R.string.enter_resolve), Toast.LENGTH_SHORT).show();
                             return;
                         }
 
@@ -85,7 +85,7 @@ public class MyResolveAdapter extends RecyclerView.Adapter<MyResolveAdapter.View
                         boolean flag= new DBHandler(mContext).onUpdateResolve(new MyResolvesModel(modal.getId(),myResolve));
                         if(flag){
                             resolvesModelArrayList.get(tempVal).setMyPromise(myResolve);
-                            mContext.resolveUDDone(resolvesModelArrayList, String.valueOf(R.string.updated_resolve));
+                            mContext.resolveUDDone(resolvesModelArrayList, mContext.getResources().getString(R.string.updated_resolve));
                         }
 
                         alertDialog.dismiss();
@@ -111,13 +111,13 @@ public class MyResolveAdapter extends RecyclerView.Adapter<MyResolveAdapter.View
                                 boolean b=new DBHandler(mContext).deleteSingleRow(modal.getId());
                                 if(b){
                                     resolvesModelArrayList.remove(tempVal);
-                                    mContext.resolveUDDone(resolvesModelArrayList, String.valueOf(R.string.deleted_resolve));
+                                    mContext.resolveUDDone(resolvesModelArrayList, mContext.getResources().getString(R.string.deleted_resolve));
                                 }
 
                             }
                         });
 
-                alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+                alertDialogBuilder.setNegativeButton(R.string.no,new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();

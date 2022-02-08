@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:text="@string/sample_text"
             android:textSize="@dimen/textAppearance_mdpi_20_sp"
-            android:textStyle="bold"
             android:typeface="sans"
             android:textColor="@color/black"
             android:layout_weight="9"

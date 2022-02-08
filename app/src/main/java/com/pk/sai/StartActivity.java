@@ -52,6 +52,7 @@ public class StartActivity extends AppCompatActivity {
 
         currentLanguage = MyPreferences.getStringPrefrences(AppConstants.APP_LANGUAGE,this,"en");
         init();
+        others();
 
         // To make top status bar disappear
         ResourceManager.changeStatusBarColor(this,getResources().getColor(R.color.white));
@@ -105,6 +106,11 @@ public class StartActivity extends AppCompatActivity {
                 }
             });
 
+    }
+
+    private void others() {
+        ResourceManager.createAartiModelArrayList(this);
+        ResourceManager.setSaiKritiModelArrayList(this);
     }
 
     private String getAssuranceUrl() {

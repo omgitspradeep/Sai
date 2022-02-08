@@ -38,20 +38,17 @@ public class SplashActivity extends AppCompatActivity {
             ResourceManager.setLocale(this,localLang);
         }
 
-        others();
-        Intent landingPage = new Intent(this, StartActivity.class);
-        startActivity(landingPage);
-
-    }
-
-    private void others() {
-        ResourceManager.createBhajanModelArrayList(this);
         try {
             listSainames();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        Intent landingPage = new Intent(this, StartActivity.class);
+        startActivity(landingPage);
+
     }
+
 
     private void listSainames() throws IOException {
 

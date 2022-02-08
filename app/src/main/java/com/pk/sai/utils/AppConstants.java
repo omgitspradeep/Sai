@@ -14,6 +14,9 @@ public class AppConstants {
     public static String dhup="file:///android_asset/bhajans/dhup.html";
     public static String shej="file:///android_asset/bhajans/shej.html";
 
+    // Kriti locations
+    public static String abdulBabaDiary="file:///android_asset/abdul_baba_diary.html";
+
 
     // 108 Names
     public static String saiNames="file:///android_asset/bhajans/shej.html";

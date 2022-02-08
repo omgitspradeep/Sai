@@ -21,11 +21,20 @@ import java.util.Locale;
 import sai.R;
 
 public class ResourceManager {
-    static ArrayList<BhajanModel> bhajanModelArrayList;
+    static ArrayList<BhajanModel> aartiModelArrayList, saiKritiModelArrayList;
     static ArrayList<SaiNamesModel> saiNamesModelArrayList;
     public static Locale locale;
     public static Resources res;
 
+    public static ArrayList<BhajanModel> getSaiKritiModelArrayList() {
+        return saiKritiModelArrayList;
+    }
+
+    public static void setSaiKritiModelArrayList(Context mContext) {
+        saiKritiModelArrayList= new ArrayList<>();
+        saiKritiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.abdul_baba_diary),AppConstants.abdulBabaDiary));
+
+    }
 
     public static void changeStatusBarColor(AppCompatActivity mContext, int color){
         Window window = mContext.getWindow();
@@ -34,18 +43,18 @@ public class ResourceManager {
         window.setStatusBarColor(color);
     }
     //getResources().getString()
-    public static void createBhajanModelArrayList(Context mContext){
-        bhajanModelArrayList= new ArrayList<>();
-        bhajanModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.bhupali_aarti),AppConstants.bhupali));
-        bhajanModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.kakad_aarti),AppConstants.kakad));
-        bhajanModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.madhyan_aarti),AppConstants.madhyan));
-        bhajanModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.dhup_aarti),AppConstants.dhup));
-        bhajanModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.shej_aarti),AppConstants.shej));
+    public static void createAartiModelArrayList(Context mContext){
+        aartiModelArrayList= new ArrayList<>();
+        aartiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.bhupali_aarti),AppConstants.bhupali));
+        aartiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.kakad_aarti),AppConstants.kakad));
+        aartiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.madhyan_aarti),AppConstants.madhyan));
+        aartiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.dhup_aarti),AppConstants.dhup));
+        aartiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.shej_aarti),AppConstants.shej));
     }
 
 
-    public static ArrayList<BhajanModel> getBhajanModelArrayList() {
-        return bhajanModelArrayList;
+    public static ArrayList<BhajanModel> getAartiModelArrayList() {
+        return aartiModelArrayList;
     }
 
     public static void displayShortToastMessage(MyResolveActivity myResolveActivity, String message) {

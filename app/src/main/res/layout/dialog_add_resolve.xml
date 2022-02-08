@@ -33,10 +33,10 @@
             android:layout_marginRight="@dimen/factor_mdpi_20_dp"
             android:background="@drawable/main_custom"
             android:hint="@string/your_resolve"
-            android:textColorHint="@android:color/darker_gray"
-            android:textColor="@color/black"
-            android:maxLines="24"
+            android:maxLines="6"
             android:padding="@dimen/factor_mdpi_15_dp"
+            android:textColor="@color/black"
+            android:textColorHint="@android:color/darker_gray"
             android:textSize="@dimen/textAppearance_mdpi_15_sp" />
 
 

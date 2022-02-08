@@ -2,7 +2,8 @@
     <string name="app_name" translatable="false">Sai</string>
     <string name="sai_sat">Sri Sai\nSatcharitra</string>
     <string name="sai_names">108 Names\nof Sai Baba</string>
-    <string name="sai_bhajan">Sai\nBhajan</string>
+    <string name="sai_kriti">Sai\nLiterature</string>
+    <string name="sai_kriti_title">Sai Kriti</string>
     <string name="settings">App\nSettings</string>
     <string name="sai_saying">Sai\nAssurances</string>
     <string name="jump">Jump</string>
@@ -37,11 +38,14 @@
     <string name="eplilogue">Eplilogue</string>
     <string name="deleted_resolve">Selected Resolve is deleted.</string>
     <string name="yes">Yes</string>
+    <string name="no">No</string>
     <string name="bhupali_aarti">Bhupali Aarti</string>
     <string name="kakad_aarti">Kakad Aarti</string>
     <string name="madhyan_aarti">Madhyan Aarti</string>
     <string name="dhup_aarti">Dhup Aarti</string>
     <string name="shej_aarti">Shej Aarti</string>
     <string name="share_your_app">Share your app</string>
+    <string name="sai_aarti">Sri Sai Aarti</string>
+    <string name="abdul_baba_diary">Diary of Abdul Baba</string>
 
 </resources>

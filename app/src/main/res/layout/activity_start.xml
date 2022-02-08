@@ -108,7 +108,7 @@
           android:background="@drawable/sub_custom"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="@string/sai_bhajan"
+          android:text="@string/sai_kriti"
           android:textSize="@dimen/textAppearance_mdpi_22_sp"
           android:textStyle="bold"
           android:textAllCaps="false"
