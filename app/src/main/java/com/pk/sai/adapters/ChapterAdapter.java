@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,6 +46,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.MyViewHo
                 Intent intent = new Intent(mContext, DescriptionActivity.class);
                 intent.putExtra("chapter",chapterId);
                 mContext.startActivity(intent);
+                Toast.makeText(mContext, "LONG PRESS to change TEXT SIZE.", Toast.LENGTH_SHORT).show();
             }
         });
 

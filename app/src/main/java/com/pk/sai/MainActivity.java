@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(manager);
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));
         recyclerView.setAdapter(chapterAdapter);
+
     }
 
 

@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -13,13 +13,13 @@ import android.widget.TextView;
 
 import com.pk.sai.utils.AppConstants;
 import com.pk.sai.utils.MyPreferences;
+import com.pk.sai.utils.ResourceManager;
 
 import sai.R;
 
 public class DescriptionActivity extends AppCompatActivity {
 
     LinearLayout topLayout;
-    private Bundle extras;
     WebView webView;
     int selectedChapter;
     boolean isChapterSelected=true;
@@ -28,11 +28,12 @@ public class DescriptionActivity extends AppCompatActivity {
     String lang="";
     String url= "";
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
-        extras = getIntent().getExtras();
+        Bundle extras = getIntent().getExtras();
 
         lang=MyPreferences.getStringPrefrences(AppConstants.APP_LANGUAGE,this,"en");
 
@@ -42,11 +43,9 @@ public class DescriptionActivity extends AppCompatActivity {
             url=AppConstants.satcharitraUrlHindi+"contents.html";
         }
 
-        if(!extras.equals(null)) {
+        if(extras != null) {
             selectedChapter = extras.getInt("chapter");
-            if(selectedChapter==101){
-                isChapterSelected=false;
-            }
+            if(selectedChapter==101) isChapterSelected = false;
         }
 
         if(isChapterSelected){
@@ -60,7 +59,38 @@ public class DescriptionActivity extends AppCompatActivity {
         }
 
 
+        webView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                int tl=ResourceManager.getTextLabel();
+                float fontSize;
+                switch(tl){
+                    case 0:
+                        tl=tl+1;
+                        fontSize = getResources().getDimension(R.dimen.textAppearance_mdpi_06_sp);
+                        updateTextSize(fontSize);
+                        break;
+                    case 1:
+                        tl=tl+1;
+                        fontSize = getResources().getDimension(R.dimen.textAppearance_mdpi_08_sp);
+                        updateTextSize(fontSize);
+                        break;
+                    case 2:
+                        tl=0;
+                        fontSize = 15f*getResources().getConfiguration().fontScale;
+                        updateTextSize(fontSize);
+                        break;
+                }
+                ResourceManager.setTextLabel(tl);
+                return false;
+            }
+        });
 
+    }
+
+    private void updateTextSize(float fontSize) {
+        WebSettings webSettings =  webView.getSettings();
+        webSettings.setDefaultFontSize((int)fontSize);
     }
 
     @SuppressLint("SetTextI18n")

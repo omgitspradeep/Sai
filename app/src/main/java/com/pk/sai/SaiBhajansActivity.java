@@ -16,8 +16,8 @@ import sai.R;
 
 public class SaiBhajansActivity extends AppCompatActivity {
 
-    RecyclerView saiAartiListRV, saiKritiListRV;
-    LinearLayoutManager linearLayoutManager,linearLayoutManager2;
+    RecyclerView saiAartiListRV, saiKritiListRV, saiStotramListRV;
+    LinearLayoutManager linearLayoutManager,linearLayoutManager2,linearLayoutManager3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,11 @@ public class SaiBhajansActivity extends AppCompatActivity {
 
         saiAartiListRV = findViewById(R.id.sai_aarti_rv);
         saiKritiListRV = findViewById(R.id.sai_kriti_rv);
+        saiStotramListRV = findViewById(R.id.sai_stotram_rv);
 
         linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         linearLayoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        linearLayoutManager3 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         // Sai Aarti
         SaiBhajansAdapter saiAartiAdapter = new SaiBhajansAdapter(this, ResourceManager.getAartiModelArrayList());
@@ -43,6 +45,11 @@ public class SaiBhajansActivity extends AppCompatActivity {
         SaiBhajansAdapter saiKritiAdapter = new SaiBhajansAdapter(this, ResourceManager.getSaiKritiModelArrayList());
         saiKritiListRV.setLayoutManager(linearLayoutManager2);
         saiKritiListRV.setAdapter(saiKritiAdapter);
+
+        // Sai Stotram
+        SaiBhajansAdapter saiStotramAdapter = new SaiBhajansAdapter(this, ResourceManager.getStotramModelArrayList());
+        saiStotramListRV.setLayoutManager(linearLayoutManager3);
+        saiStotramListRV.setAdapter(saiStotramAdapter);
 
     }
 

@@ -27,10 +27,18 @@ import sai.R;
 public class SplashActivity extends AppCompatActivity {
 
     String localLang="en";
-
+    //boolean firstEverLaunch=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+/*
+        // When app is launched for the first time show tutorial in StartActivity
+        firstEverLaunch = MyPreferences.getBooleanPrefrences(AppConstants.APP_LAUNCHED_FIRST_TIME,this,true);
+        if(firstEverLaunch){
+            showTutorial();
+        }
+*/
 
         localLang = MyPreferences.getStringPrefrences(AppConstants.APP_LANGUAGE,this,"en");
         if(!localLang.equalsIgnoreCase("en")){
@@ -48,6 +56,8 @@ public class SplashActivity extends AppCompatActivity {
         startActivity(landingPage);
 
     }
+
+    private void showTutorial() { }
 
 
     private void listSainames() throws IOException {
@@ -73,10 +83,6 @@ public class SplashActivity extends AppCompatActivity {
             Log.e("MainActivity", "Error" + line, e1);
             e1.printStackTrace();
         }
-
-
-        //
-
 
         ResourceManager.setKnamesModelArrayList(outList);
     }

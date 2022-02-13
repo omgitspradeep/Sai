@@ -23,9 +23,9 @@ public class MyPreferences {
         editor.putBoolean(key, value);
         editor.commit();
     }
-    public static boolean getBooleanPrefrences(String key,Context context){
+    public static boolean getBooleanPrefrences(String key,Context context,boolean defaultValue){
         SharedPreferences prefrences = context.getSharedPreferences(myPrefrences, Context.MODE_PRIVATE);
-        return prefrences.getBoolean(key, false);
+        return prefrences.getBoolean(key, defaultValue);
     }
 
     public static  void setIntPrefrences(String key,int value,Context context){

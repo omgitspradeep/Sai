@@ -47,5 +47,15 @@
     <string name="share_your_app">Share your app</string>
     <string name="sai_aarti">Sri Sai Aarti</string>
     <string name="abdul_baba_diary">Diary of Abdul Baba</string>
+    <string name="khaparde_diary">Diary of Khaparde</string>
+    <string name="stotram">Important Bhajans</string>
+
+    <string name="aigiri_nandini">Aigiri Nandini</string>
+    <string name="guru_astakam">Guru Astakam</string>
+    <string name="guru_paduka_stotram">Guru Paduka Stotram</string>
+    <string name="hanuman_chalisa">Hanuman Chalisa</string>
+    <string name="nirvana_shatakam">Nirvana Shatakam</string>
+    <string name="om_jai_jagadish">Om Jai Jagadish</string>
+    <string name="shivaTandavaStotra">Shiva Tandava Stotra</string>
 
 </resources>

@@ -20,7 +20,7 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
 
     // below variable is for our table name.
-    private static final String TABLE_NAME = "myresolves";
+    private static final String RESOLVE_TABLE_NAME = "myresolves";
 
     // below variable is for our id column.
     private static final String ID_COL = "id";
@@ -42,7 +42,7 @@ public class DBHandler extends SQLiteOpenHelper {
         // an sqlite query and we are
         // setting our column names
         // along with their data types.
-        String query = "CREATE TABLE " + TABLE_NAME + " ("
+        String query = "CREATE TABLE " + RESOLVE_TABLE_NAME + " ("
                 + ID_COL + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + PROMISE_COL + " TEXT)";
 
@@ -69,7 +69,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         // after adding all values we are passing
         // content values to our table.
-        db.insert(TABLE_NAME, null, values);
+        db.insert(RESOLVE_TABLE_NAME, null, values);
 
         // at last we are closing our
         // database after adding database.
@@ -81,7 +81,7 @@ public class DBHandler extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // this method is called to check if the table exists already.
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + RESOLVE_TABLE_NAME);
         onCreate(db);
     }
 
@@ -95,7 +95,7 @@ public class DBHandler extends SQLiteOpenHelper {
 
         String[] whereArgs = { Integer.toString(myResolve.getId()) };
 
-        boolean updateSuccessful = db.update(TABLE_NAME, values, where, whereArgs) > 0;
+        boolean updateSuccessful = db.update(RESOLVE_TABLE_NAME, values, where, whereArgs) > 0;
 
         db.close();
 
@@ -103,13 +103,11 @@ public class DBHandler extends SQLiteOpenHelper {
 
     }
 
-
     public boolean deleteSingleRow(int rowId)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_NAME, ID_COL + "=" + rowId, null) > 0;
+        return db.delete(RESOLVE_TABLE_NAME, ID_COL + "=" + rowId, null) > 0;
     }
-
 
     // we have created a new method for reading all the courses.
     public ArrayList<MyResolvesModel> readMantras() {
@@ -118,7 +116,7 @@ public class DBHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         // on below line we are creating a cursor with query to read data from database.
-        Cursor cursorMantras = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+        Cursor cursorMantras = db.rawQuery("SELECT * FROM " + RESOLVE_TABLE_NAME, null);
 
         // on below line we are creating a new array list.
         ArrayList<MyResolvesModel> courseModalArrayList = new ArrayList<>();

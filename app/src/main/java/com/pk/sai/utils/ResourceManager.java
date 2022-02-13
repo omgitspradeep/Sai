@@ -21,10 +21,19 @@ import java.util.Locale;
 import sai.R;
 
 public class ResourceManager {
-    static ArrayList<BhajanModel> aartiModelArrayList, saiKritiModelArrayList;
+    static ArrayList<BhajanModel> aartiModelArrayList, saiKritiModelArrayList, stotramModelArrayList;
     static ArrayList<SaiNamesModel> saiNamesModelArrayList;
     public static Locale locale;
     public static Resources res;
+    public static int textLabel=0;
+
+    public static int getTextLabel() {
+        return textLabel;
+    }
+
+    public static void setTextLabel(int textLabel) {
+        ResourceManager.textLabel = textLabel;
+    }
 
     public static ArrayList<BhajanModel> getSaiKritiModelArrayList() {
         return saiKritiModelArrayList;
@@ -33,6 +42,7 @@ public class ResourceManager {
     public static void setSaiKritiModelArrayList(Context mContext) {
         saiKritiModelArrayList= new ArrayList<>();
         saiKritiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.abdul_baba_diary),AppConstants.abdulBabaDiary));
+        saiKritiModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.khaparde_diary),AppConstants.khapardeDiary));
 
     }
 
@@ -76,5 +86,20 @@ public class ResourceManager {
         Configuration conf = res.getConfiguration();
         conf.locale = locale;
         res.updateConfiguration(conf, dm);
+    }
+
+    public static void setSaiStotramModelArrayList(Context mContext) {
+        stotramModelArrayList= new ArrayList<>();
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.om_jai_jagadish),AppConstants.omJaiJagadish));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.hanuman_chalisa),AppConstants.hanumanChalisa));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.shivaTandavaStotra),AppConstants.shivaTandavaStotra));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.aigiri_nandini),AppConstants.aigiriNandini));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.nirvana_shatakam),AppConstants.nirvanaShatakam));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.guru_astakam),AppConstants.guruAstakam));
+        stotramModelArrayList.add(new BhajanModel(mContext.getResources().getString(R.string.guru_paduka_stotram),AppConstants.guruPadukaStotram));
+    }
+
+    public static ArrayList<BhajanModel> getStotramModelArrayList() {
+        return stotramModelArrayList;
     }
 }

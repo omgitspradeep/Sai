@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,6 +48,7 @@ public class SaiBhajansAdapter extends RecyclerView.Adapter<SaiBhajansAdapter.Vi
                 i.putExtra("title_",bhn.getBhajanTitle());
                 i.putExtra("url_",bhn.getBhajanUrl());
                 context.startActivity(i);
+                Toast.makeText(context, "To Change TEXT SIZE DOUBLE TAP.", Toast.LENGTH_SHORT).show();
             }
         });
     }

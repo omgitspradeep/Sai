@@ -6,28 +6,15 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.pk.sai.models.SaiNamesModel;
 import com.pk.sai.utils.AppConstants;
 import com.pk.sai.utils.MyPreferences;
 import com.pk.sai.utils.ResourceManager;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.Locale;
 
 import sai.BuildConfig;
@@ -45,6 +32,7 @@ public class StartActivity extends AppCompatActivity {
     Locale locale;
     boolean isLanguageSelectd=false;
     RadioButton tempRadioButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,6 +99,7 @@ public class StartActivity extends AppCompatActivity {
     private void others() {
         ResourceManager.createAartiModelArrayList(this);
         ResourceManager.setSaiKritiModelArrayList(this);
+        ResourceManager.setSaiStotramModelArrayList(this);
     }
 
     private String getAssuranceUrl() {
@@ -131,6 +120,8 @@ public class StartActivity extends AppCompatActivity {
         saiAssurances = findViewById(R.id.sai_assurances);
         saiSettings = findViewById(R.id.app_settings);
         myResolve = findViewById(R.id.my_resolve_start);
+
+
 
     }
 
@@ -236,5 +227,6 @@ public class StartActivity extends AppCompatActivity {
             //e.toString();
         }
     }
+
 
 }

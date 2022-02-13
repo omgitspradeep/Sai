@@ -39,8 +39,33 @@
         android:nestedScrollingEnabled="false" />
 
     <TextView
-        android:id="@+id/sai_kriti_tv"
+        android:id="@+id/sai_stotram_tv"
         android:layout_below="@+id/sai_aarti_rv"
+        android:text="@string/stotram"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/factor_mdpi_40_dp"
+        android:gravity="center"
+        android:background="@color/azure"
+        android:textSize="@dimen/textAppearance_mdpi_22_sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/factor_mdpi_30_dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+        android:layout_below="@+id/sai_stotram_tv"
+        android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+        android:id="@+id/sai_stotram_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:nestedScrollingEnabled="false"
+        />
+
+    <TextView
+        android:id="@+id/sai_kriti_tv"
+        android:layout_below="@+id/sai_stotram_rv"
         android:text="@string/sai_kriti_title"
         android:layout_width="match_parent"
         android:layout_height="@dimen/factor_mdpi_40_dp"
@@ -62,6 +87,8 @@
         android:fontFamily="monospace"
         android:nestedScrollingEnabled="false"
         />
+
+
 
   </RelativeLayout>
 

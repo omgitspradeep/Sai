@@ -49,5 +49,14 @@
     <string name="share_your_app">अपना ऐप साझा करें</string>
     <string name="sai_aarti">श्री साईं आरती</string>
     <string name="abdul_baba_diary">अब्दुल बाबा की डेयरी</string>
+    <string name="khaparde_diary">खापर्डे शिरडी डेयरी</string>
 
+    <string name="stotram">महत्वपूर्ण भजन</string>
+    <string name="aigiri_nandini">अयिगिरि नन्दिनि</string>
+    <string name="guru_astakam">श्री गुरु अष्टकम</string>
+    <string name="guru_paduka_stotram">गुरु पादुका स्तोत्र</string>
+    <string name="hanuman_chalisa">हनुमान चालीसा</string>
+    <string name="nirvana_shatakam">निर्वाण षट्कम्</string>
+    <string name="om_jai_jagadish">ओम जय जगदीश</string>
+    <string name="shivaTandavaStotra">शिव तांडव स्तोत्र</string>
 </resources>
